@@ -184,7 +184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2636762512984582921, guid: 1330e9231ca464c4499a9846c0402e29, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.533
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2636762512984582921, guid: 1330e9231ca464c4499a9846c0402e29, type: 3}
       propertyPath: m_LocalPosition.z
@@ -226,6 +226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2636762512984582926, guid: 1330e9231ca464c4499a9846c0402e29, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2636762512984582927, guid: 1330e9231ca464c4499a9846c0402e29, type: 3}
       propertyPath: runSpeed
       value: 3
@@ -243,6 +247,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -258,6 +263,21 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 298ee88e407ba9944bdcf5b9828c4483, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2024091110}
+  offset: {x: 0, y: 0, z: -10}
+  smoothFactor: 3
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -5925,6 +5945,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2636762512984582926, guid: 1330e9231ca464c4499a9846c0402e29, type: 3}
   m_PrefabInstance: {fileID: 455136789}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2024091110 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2636762512984582921, guid: 1330e9231ca464c4499a9846c0402e29, type: 3}
+  m_PrefabInstance: {fileID: 455136789}
+  m_PrefabAsset: {fileID: 0}
 --- !u!61 &2024091111
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5972,7 +5997,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7784727500603629096, guid: 76a54640531fb7245a1cd319cb20854a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 7784727500603629096, guid: 76a54640531fb7245a1cd319cb20854a, type: 3}
       propertyPath: m_LocalPosition.z
